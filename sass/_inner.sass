@@ -1,0 +1,293 @@
+@import "base"
+//styles for inner pages
+//house
+.house
+	position: relative
+	padding: 0 250px 40px 200px
+	.notation
+		top: 120px
+		right: 0
+//select
+.select
+	margin-bottom: 50px
+.select__title
+	margin-bottom: 10px
+	button
+		position: relative
+		padding: 5px 0 5px 14px
+		background: #FFF 
+		font-size: 18px
+		font-weight: bold
+		overflow: visible
+		span
+			border-bottom: 1px dotted $font
+		i
+			position: absolute
+			top: 12px
+			left: 0
+			width: 0px
+			height: 0px
+			border-style: solid
+			border-width: 4px 4px 0 4px
+			border-color: $font transparent transparent transparent
+	&.is-opened
+		button
+			cursor: default
+		span
+			border: none
+		i
+			display: none
+.select__list	
+	position: relative
+	padding-right: 270px 
+	margin: 0 0 25px 4px
+	overflow: hidden
+	button
+		float: left
+		margin: 0 10px 5px 0
+		padding: 5px 10px
+		background: #FFF 
+		span
+			border-bottom: 1px dotted
+			color: $blue 			
+			font-weight: bold
+			font-size: 16px
+		&.is-selected
+			background: $blue
+			span
+				color: #fff   
+				border: none
+	strong
+		font-weight: normal
+		position: absolute
+		top: 5px
+		left: 416px 
+		color: #9b9b9b 
+//registered
+.reged
+	margin-bottom: 50px
+.reged__floor
+	height: 15px
+	margin-bottom: 25px
+	border-bottom: 1px solid #dadada
+	span
+		padding: 0 20px
+		margin-left: 40px
+		background: #fff 
+		font-size: 25px
+		color: #b0b5bb  
+.reged__list
+	li
+		position: relative 
+		margin-bottom: 20px
+		overflow: hidden
+.reged__pic
+	float: left
+	margin-right: 15px
+	img
+		display: block
+		padding: 1px 
+		border: 1px solid #dadada
+.reged__name
+	float: left
+	width: 360px 
+	padding-top: 15px 
+	span
+		display: block
+		font-size: 12px
+		color: #b0b5bb  
+	a
+		border-bottom: 1px solid #a3d5eb
+		font-weight: bold
+		font-size: 21px
+.reged__send
+	position: absolute
+	bottom: 5px
+	right: 0
+	padding-right: 14px 
+	font-size: 12px
+	border-bottom: 1px solid 
+	color: #b0b5bb  
+	i
+		position: absolute
+		top: 2px
+		right: 0
+		+s(arr-r)
+//object
+.object__list
+	margin-bottom: 20px
+	overflow: hidden
+	li
+		float: left
+		width: 380px
+.object__title
+	padding: 0 55px
+	font-size: 21px
+	font-weight: bold
+	line-height: 1
+	strong
+		position: relative
+		display: block
+		font-size: 36px
+		color: $ylw 
+	span
+		position: absolute
+		right: 0
+		bottom: 0
+		width: 100px
+		font-weight: normal
+		font-size: 16px
+		color: $ylw
+		line-height: .9 
+.object__item-1, .object__item-2, .object__item-3
+	img
+		display: block
+.object__form
+	width: 250px
+	padding: 20px 20px 15px 20px
+	margin: 0 0 10px 45px
+	background: #f3f3f3
+	border-radius: 10px 
+	label
+		position: relative
+		display: block
+		margin-bottom: 7px
+		i
+			position: absolute
+			top: 9px
+			left: 7px
+	input
+		width: 208px
+		height: 34px
+		padding: 0 10px 0 30px
+		border: 1px solid #d4d4d4
+		border-radius: 6px
+		box-shadow: 1px 0 7px rgba(0,0,0,.09) inset
+		font-size: 15px	
+.object__form_soon
+	min-height: 118px
+	text-align: center 
+	span
+		display: block
+		padding-top: 25px
+		font-size: 26px
+		color: #d6d8db
+		line-height: 1 
+.object__mail
+	i
+		+s(inp-mail)
+.object__pass
+	i
+		+s(inp-pass)
+.object__btn
+	overflow: hidden
+	a
+		float: left
+		margin-top: 7px
+		color: #c7c7c7
+		border-bottom: 1px solid 
+	button
+		float: right 
+		height: 32px
+		padding: 0 30px
+		border-radius: 5px
+		background: #ffe766
+		@include background-image(linear-gradient(#ffe766, #fcc456))
+		font-size: 15px
+		text-shadow: 0 1px 1px #fff
+.object__contacts
+	padding-bottom: 20px
+	text-align: center
+	strong
+		display: block
+		margin-bottom: 10px
+		font-size: 21px
+		span
+			margin-right: 5px
+			font-size: 13px
+			font-weight: normal
+	a
+		position: relative
+		padding-left: 28px 
+		font-size: 12px
+		color: $font
+		span
+			border-bottom: 1px solid  
+		i
+			position: absolute
+			top: -5px
+			left: 0
+			+s(mark)
+//about
+.about
+	p, li
+		line-height: 1.5
+	p
+		margin-bottom: 20px
+	ul
+		margin: 30px 0
+	a
+		border-bottom: 1px solid #a3d5eb
+//club-kart
+.club-kart
+	padding: 210px 0 20px 50px
+	background: url(../img/kart.jpg) no-repeat 0 0
+	p
+		margin-bottom: 10px
+		line-height: 1.5
+	a
+		color: #cfcfcf
+		border-bottom: 1px solid 
+//news
+.news
+	margin: 0 50px 30px 50px
+	padding: 25px 35px
+	background: #f3f3f3
+	border-radius: 7px
+.news__top
+	margin-bottom: 15px
+	overflow: hidden
+	strong
+		font-size: 19px
+	a
+		float: right
+		color: $font
+		font-size: 12px
+		border-bottom: 1px solid  
+.news__list
+	overflow: hidden
+	li
+		float: left
+		width: 300px
+		margin-left: 35px
+		&:first-child
+			margin: 0
+	span
+		color: $blue
+		font-style: italic
+	p
+		margin: 5px 0 10px 0
+	a
+		font-size: 12px
+		color: #cfcfcf
+		border-bottom: 1px solid
+//partners
+.partners
+	margin: 0 50px 40px 50px
+	padding: 0 0 0 35px
+.partners__title
+	font-size: 19px 
+.partners__list
+	font-size: 0
+	a
+		display: inline-block
+		width: 90px 
+		padding: 0 10px 10px 0
+		vertical-align: top
+		text-align: center
+	img
+		margin-bottom: 10px
+	span		
+		border-bottom: 1px solid $link-b
+		font-size: 12px
+		color: $font 
