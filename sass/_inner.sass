@@ -290,4 +290,127 @@
 	span		
 		border-bottom: 1px solid $link-b
 		font-size: 12px
-		color: $font 
+		color: $font
+//housing
+.housing
+	position: relative
+	padding-right: 300px
+	.notation
+		top: 50px
+		right: 0
+	.h3
+		padding-left: 210px  
+.housing__map	
+	position: relative
+	width: 765px
+	height: 365px 
+	margin: 0 0 50px 25px
+	background: url(../img/map.jpg) no-repeat 0 0
+	span
+		position: absolute		
+		cursor: pointer 
+		&:hover
+			i
+				background: #4bbbf8
+				@include background-image(linear-gradient(#4bbbf8, #11a5f5))
+				&:after
+					border-color: #11a5f5 transparent transparent transparent
+	i
+		position: absolute		
+		left: 50%
+		margin-left: -12px
+		width: 24px
+		padding: 7px 0 3px 0		
+		background: #777
+		@include background-image(linear-gradient(#777, #565656))
+		border-radius: 2px 2px 0 0
+		text-align: center
+		color: #fff
+		font-style: normal
+		font-size: 13px
+		font-weight: bold 
+		&:after
+			content: ""
+			position: absolute
+			bottom: -10px
+			left: 0
+			width: 0px
+			height: 0px
+			border-style: solid
+			border-width: 10px 12px 0 12px
+			border-color: #565656 transparent transparent transparent
+.housing__item-1
+	right: 135px
+	bottom: 92px
+	+s(n1)
+	i
+		bottom: 50px
+	&:hover
+		+s(n1-h)
+.housing__item-2, .housing__item-3, .housing__item-4
+	bottom: 100px
+	+s(n2-3-4)
+	i
+		bottom: 42px
+	&:hover
+		+s(n2-3-4-h)
+.housing__item-2
+	left: 415px
+.housing__item-3
+	left: 350px
+.housing__item-4
+	left: 285px
+.housing__item-5-6
+	right: 245px
+	bottom: 165px
+	+s(n5-6)
+	i
+		left: 55px
+		bottom: 75px
+		&:first-child
+			left: 30px
+			bottom: 25px
+	&:hover
+		+s(n5-6-h)
+.housing__item-7, .housing__item-8, .housing__item-9
+	+s(n7-8-9)
+	&:hover
+		+s(n7-8-9-h)
+.housing__item-7
+	left: 413px
+	bottom: 275px 
+.housing__item-8
+	left: 355px
+	bottom: 235px
+.housing__item-9
+	left: 297px
+	bottom: 197px 
+.housing__item-10-11
+	left: 65px
+	bottom: 75px
+	+s(n10-11)
+	i
+		bottom: 57px
+		left: 36px
+		&:first-child
+			left: 185px
+	&:hover
+		+s(n10-11-h)
+.housing__list
+	padding-left: 195px
+	margin-bottom: 100px 
+	overflow: hidden
+	ul
+		float: left
+		margin-right: 40px 
+	li
+		padding: 4px 30px 4px 12px
+		border-radius: 3px
+		cursor: pointer
+		&:hover
+			background: $ylw 
+			color: #FFF
+			span
+				color: #FFF 
+		span
+			color: #c0c0c0 
